@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
+st.set_page_config(layout="wide")
+
 fig, ax = plt.subplots(figsize=(8, 6))
 years, y_ticks = [2019, 2020, 2021, 2022, 2023, 2024, 2025], [0, 50, 100, 150, 200, 250, 300]
 wnba_rev, nba_sh, act_pay = [95, 120, 145, 170, 195, 220, 300], [45, 60, 70, 85, 95, 110, 145], [18, 19, 20, 21, 22, 23, 24]
@@ -24,4 +26,6 @@ ax.text(2026.5, 230, "Money the players would share,\nif they were paid like N.B
 ax.plot(2026.3, 190, marker='s', color='#4d52a4', markersize=12, clip_on=False)
 ax.text(2026.5, 190, "Money that W.N.B.A.\nplayers actually make", color='#2c2f63', va='center', fontsize=8)
 
-st.pyplot(fig) 
+left_margin, center_col, right_margin = st.columns([1, 3, 1])
+with center_col:
+  st.pyplot(fig, use_container_width=True)
