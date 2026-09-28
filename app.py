@@ -27,6 +27,6 @@ ax.text(2026.5, 230, "Money the players would share,\nif they were paid like N.B
 ax.plot(2026.3, 190, marker='s', color='#4d52a4', markersize=96, clip_on=False)
 ax.text(2026.5, 190, "Money that W.N.B.A.\nplayers actually make", color='#2c2f63', va='center', fontsize=64)
 
-left_margin, center_col, right_margin = st.columns([1, 3, 1])
+left_margin, center_col, right_margin = st.columns([1, 8, 1])
 with center_col:
   st.pyplot(fig, use_container_width=True)
