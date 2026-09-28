@@ -18,7 +18,7 @@ ax.set_ylabel("ANNUAL REVENUE", loc='top', rotation=0, fontsize=90)
 ax.set_xlim(2018.5, 2025.5); ax.set_ylim(0, 305)
 ax.spines['top'].set_visible(False); ax.spines['right'].set_visible(False)
 ax.set_xticks(years); ax.set_yticks(y_ticks)
-ax.set_yticklabels(['0', '50 million', '100 million', '150 million', '200 million', '250 million', '$300 million'],fontsize=90)
+ax.set_yticklabels(['0', '50 million', '100 million', '150 million', '200 million', '250 million', '300 million'],fontsize=90)
 ax.tick_params(axis="x", labelsize=90, pad=30)
 
 ax.bar(years, wnba_rev, width=0.6, color='#e0e0e0')
