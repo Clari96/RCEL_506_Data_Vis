@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-fig, ax = plt.subplots(figsize=(8, 6))
+fig, ax = plt.subplots(figsize=(16, 12))
 years, y_ticks = [2019, 2020, 2021, 2022, 2023, 2024, 2025], [0, 50, 100, 150, 200, 250, 300]
 wnba_rev, nba_sh, act_pay = [95, 120, 145, 170, 195, 220, 300], [45, 60, 70, 85, 95, 110, 145], [18, 19, 20, 21, 22, 23, 24]
 ax.set_title("W.N.B.A. Players’ Compensation", loc='center', fontsize=16, pad=15)
