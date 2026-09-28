@@ -94,5 +94,5 @@ fig.update_layout(
 )
 
 left_margin, center_col, right_margin = st.columns([1, 8, 1])
-with center_col:
-  st.pyplot(fig, use_container_width=True)
+with col_center:
+  st.plotly_chart(fig, use_container_width=True)
