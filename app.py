@@ -76,6 +76,7 @@ fig.update_layout(
     xaxis=dict(tickmode="linear", tickfont=dict(size=18)),
     yaxis=dict(
         title="ANNUAL REVENUE",
+        range=[0, 305],
         tickvals=[0, 50, 100, 150, 200, 250, 300],
         ticktext=[
             "0",
