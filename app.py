@@ -14,7 +14,7 @@ ax.set_xlim(2018.5, 2025.5); ax.set_ylim(0, 305)
 ax.spines['top'].set_visible(False); ax.spines['right'].set_visible(False)
 ax.set_xticks(years); ax.set_yticks(y_ticks)
 ax.set_yticklabels(['0', '50 mil.', '100 mil.', '150 mil.', '200 mil.', '250 mil.', '$300 million'],fontsize=90)
-ax.tick_params(axis="x", labelsize=90)
+ax.tick_params(axis="x", labelsize=90, pad=30)
 
 ax.bar(years, wnba_rev, width=0.6, color='#e0e0e0')
 ax.bar(years, nba_sh, width=0.4, color='#9eb3ff')
