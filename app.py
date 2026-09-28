@@ -41,7 +41,7 @@ fig.add_trace(
         name="How much money the W.N.B.A. makes",
         marker_color="#e0e0e0",
         width=0.6,
-        hovertemplate="%{customdata} million<extra></extra>",
+        hovertemplate="$%{y} million <extra></extra>",
     )
 )
 
@@ -53,7 +53,7 @@ fig.add_trace(
         name="Money the players would share, if paid like N.B.A. players",
         marker_color="#9eb3ff",
         width=0.4,
-        hovertemplate="%{customdata} million<extra></extra>",
+        hovertemplate="$%{y} million <extra></extra>",
     )
 )
 
