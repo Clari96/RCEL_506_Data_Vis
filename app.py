@@ -72,7 +72,19 @@ fig.add_trace(
 # Overlay bars and format layout
 fig.update_layout(
     barmode="overlay",
-    title=dict(text="W.N.B.A. Players’ Compensation", x=0.5, font=dict(size=28)),
+    margin=dict(t=100),
+    annotations=[
+        dict(
+            text="<b>W.N.B.A. Players’ Compensation</b>",
+            xref="x",
+            x=2022,  # Anchored precisely to the center year of the x-axis
+            yref="paper",
+            y=1.15,
+            xanchor="center",
+            showarrow=False,
+            font=dict(size=28, color="black"),
+        )
+    ],
     xaxis=dict(tickmode="linear", tickfont=dict(size=18)),
     yaxis=dict(
         title="ANNUAL REVENUE",
